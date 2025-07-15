@@ -5,3 +5,4 @@ scikit-learn
 nltk
 numpy
 beautifulsoup4
+python-dotenv
