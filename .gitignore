@@ -4,4 +4,4 @@ __pycache__/
 .cache/
 .ipynb_checkpoints/
 .env
-*.csv
+spotify_millsongdata.csv

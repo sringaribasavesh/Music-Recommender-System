@@ -2,10 +2,13 @@ import pickle
 import streamlit as st
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+from dotenv import load_dotenv
 import os
-# 🎧 Spotify API credentials
-client_id = os.getenv("client_id")
-client_secret = os.getenv("client_secret")
+load_dotenv()
+
+# Access the variables
+client_id = os.getenv("SPOTIPY_CLIENT_ID")
+client_secret = os.getenv("SPOTIPY_CLIENT_SECRET")
 
 # ✅ Initialize Spotify client
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
